@@ -1,4 +1,4 @@
-name: CI
+name: Skip Phrase
 
 on: [pull_request]
 

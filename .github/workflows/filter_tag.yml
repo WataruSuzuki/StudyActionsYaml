@@ -1,0 +1,16 @@
+name: Filter tag and branch
+
+on:
+  push:
+    tags: v*
+    branches:
+      - hoge
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Run ALL TESTS
+      run: echo "Run ALL TESTS"
