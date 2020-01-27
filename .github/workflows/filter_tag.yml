@@ -3,8 +3,8 @@ name: Filter tag and branch
 on:
   push:
     tags: v*
-    branches:
-      - hoge
+    branches-ignore:
+      - !'hoge'
 
 jobs:
   validation:
