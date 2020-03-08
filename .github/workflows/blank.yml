@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
   validation:
     runs-on: ubuntu-latest
-    if: "contains(github.event.pull_request.body, '[please test action]')"
+    if: "contains(github.event.pull_request.body, '[please action]')"
     steps:
     - uses: actions/checkout@v1
 
